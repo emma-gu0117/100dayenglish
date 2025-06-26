@@ -12,6 +12,8 @@
             font-family: "Microsoft YaHei", sans-serif;
             font-size: 16px;
             line-height: 1.5;
+            max-width: 600px;
+            margin: 0 auto;
         }
         h1 { 
             color: #ff6b6b;
@@ -28,8 +30,9 @@
             font-weight: bold;
         }
         .footer {
-            margin-top: 25px;
+            margin-top: 20px;
             line-height: 1.8;
+            padding-bottom: 15px;
         }
         .chinese {
             font-style: italic;
@@ -38,7 +41,7 @@
         }
         .english {
             font-family: 'Arial', sans-serif;
-            color: #2a7f62; /* 深青绿色 */
+            color: #2a7f62;
             font-weight: bold;
             display: block;
             letter-spacing: 0.5px;
@@ -47,6 +50,24 @@
             width: 85%;
             margin: 20px auto;
             display: block;
+        }
+        .signature-image {
+            width: 120px; /* 优化后的图片尺寸 */
+            margin: 15px auto; /* 紧凑的间距 */
+            display: block;
+            filter: drop-shadow(0 1px 2px rgba(0,0,0,0.1));
+            transition: all 0.3s ease;
+        }
+        .signature-image:hover {
+            transform: scale(1.03); /* 更克制的悬浮效果 */
+            opacity: 0.9;
+        }
+        @media (max-width: 480px) {
+            .signature-image {
+                width: 100px; /* 移动端适配 */
+            }
+            h1 { font-size: 20px; }
+            body { padding: 15px; }
         }
     </style>
 </head>
@@ -63,5 +84,11 @@
         <span class="chinese">以梦为马，从小启程</span>
         <span class="english">Think Big, Start Small</span>
     </div>
+
+    <!-- 优化后的签名图片 -->
+    <img src="https://bemma-english-2025-1366260234.cos.ap-shanghai.myqcloud.com/%40Bemma.PNG" 
+         alt="BenAndEmma官方签名" 
+         class="signature-image"
+         onerror="this.style.display='none'">
 </body>
 </html>
