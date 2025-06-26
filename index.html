@@ -8,44 +8,60 @@
         body {
             background: #fff9f9;
             text-align: center;
-            padding: 25px;
+            padding: 20px;
             font-family: "Microsoft YaHei", sans-serif;
-            font-size: 18px; /* 基础字体放大 */
-            line-height: 1.6;
+            font-size: 16px;
+            line-height: 1.5;
         }
         h1 { 
             color: #ff6b6b;
-            font-size: 28px; /* 标题放大 */
-            margin-bottom: 20px;
+            font-size: 22px;
+            margin-bottom: 15px;
         }
         .message {
-            font-size: 20px; /* 正文特别放大 */
-            margin: 25px 0;
+            font-size: 17px;
+            margin: 20px 0;
             color: #333;
         }
-        audio {
-            width: 90%;
-            margin: 25px auto;
+        .signature {
+            color: #0066cc;
+            font-weight: bold;
+        }
+        .footer {
+            margin-top: 25px;
+            line-height: 1.8;
+        }
+        .chinese {
+            font-style: italic;
+            color: #5a5a5a;
             display: block;
         }
-        .ios-tip {
-            color: #ff6b6b;
-            font-size: 16px;
-            margin-top: 15px;
+        .english {
+            font-family: 'Arial', sans-serif;
+            color: #2a7f62; /* 深青绿色 */
+            font-weight: bold;
+            display: block;
+            letter-spacing: 0.5px;
+        }
+        audio {
+            width: 85%;
+            margin: 20px auto;
+            display: block;
         }
     </style>
 </head>
 <body>
     <h1>🎉 恭喜完成亲子英语课程！</h1>
-    <p class="message">来自老师的特别祝福：</p>
+    <p class="message">来自<span class="signature">BenAndEmma</span>的特别祝福：</p>
 
-    <!-- 替换为您的腾讯云COS链接 -->
     <audio controls>
         <source src="https://bemma-english-2025-1366260234.cos.ap-shanghai.myqcloud.com/%E4%BA%B2%E5%AD%90%E8%8B%B1%E8%AF%AD%20test.MP3" type="audio/mpeg">
         您的浏览器不支持音频播放，请<a href="https://bemma-english-2025-1366260234.cos.ap-shanghai.myqcloud.com/%E4%BA%B2%E5%AD%90%E8%8B%B1%E8%AF%AD%20test.MP3">点击下载</a>
     </audio>
 
-    <p class="ios-tip">※ 苹果手机用户需点击播放按钮 ※</p>
-    <p>长按保存二维码，随时回听这份鼓励~</p>
+    <div class="footer">
+        <span class="chinese">以梦为马，从小启程</span>
+        <span class="english">Think Big, Start Small</span>
+    </div>
 </body>
 </html>
